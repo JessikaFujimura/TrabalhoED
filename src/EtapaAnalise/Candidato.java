@@ -2,14 +2,14 @@ package EtapaAnalise;
 
 public class Candidato {
 	String nome;
-	int cod;
+	static int cod;
 	double pontuacao;
 	Candidato anterior;
 
-	public Candidato(String nome, int cod, double pontuacao) {
+	public Candidato(String nome, double pontuacao) {
 		this.nome = nome;
-		this.cod = cod;
 		this.pontuacao = pontuacao;
+		cod++;
 	}
 
 	public Candidato getAnterior() {
